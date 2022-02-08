@@ -73,6 +73,7 @@ class enter_sql:
         for i in data:
             print(i)
 
+#타이머 설정 매일 오후 5시 업데이트
 day = 0
 while 1:
     if time.localtime()[3] == 17 and time.localtime()[4] == 0 and time.localtime()[5] == 0:
@@ -163,7 +164,8 @@ while 1:
         print(time.localtime())
     if day == 100:
         break
-#
+
+#회사명, 대표자명 불러오기 
 mysql_mine = enter_sql('localhost','root','1111','INVESTAR','utf8')
 mysql_mine.data_call(['회사명','대표자명'],'company')
 mysql_mine.exit_sql()
