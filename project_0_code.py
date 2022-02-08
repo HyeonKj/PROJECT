@@ -73,7 +73,7 @@ class enter_sql:
         for i in data:
             print(i)
 
-#타이머 설정 매일 오후 5시 업데이트
+#타이머 설정 매일 오후 5시 업데이트 11
 day = 0
 while 1:
     if time.localtime()[3] == 17 and time.localtime()[4] == 0 and time.localtime()[5] == 0:
