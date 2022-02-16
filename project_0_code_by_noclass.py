@@ -1,7 +1,7 @@
 import pymysql
 import requests
 import bs4
-#첫번째 미션 
+#첫번째 미션 주가 예측 프로그램 클래스 사용 없이. 
 # company info
 url = 'http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&searchType=13'
 res = requests.get(url)
